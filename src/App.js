@@ -3,7 +3,7 @@ import { Container, Form, Row, Col, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-    const initialPrice = 5500;
+    const initialPrice = 1500;
 
     const [price, setPrice] = useState(initialPrice);
     const [discount, setDiscount] = useState(30);
