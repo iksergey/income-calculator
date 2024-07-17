@@ -7,7 +7,7 @@ function App() {
 
     const [price, setPrice] = useState(6500);
     const [discount, setDiscount] = useState(30);
-    const [quantity, setQuantity] = useState(1);
+    const [quantity, setQuantity] = useState(10);
 
     const calculateDiscountedPrice = () => {
         return (price - (price * discount / 100)).toFixed(2);
@@ -61,7 +61,7 @@ function App() {
                             <Col xs={12} md={7} lg={8}>
                                 <Form.Range
                                     min={1}
-                                    max={100}
+                                    max={500}
                                     value={quantity}
                                     onChange={(e) => setQuantity(Number(e.target.value))}
                                 />
