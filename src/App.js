@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
     const initialPrice = 1500;
 
-    const [price, setPrice] = useState(initialPrice);
+    const [price, setPrice] = useState(6500);
     const [discount, setDiscount] = useState(30);
     const [quantity, setQuantity] = useState(1);
 
@@ -48,7 +48,7 @@ function App() {
                             <Col xs={12} md={7} lg={8}>
                                 <Form.Range
                                     min={30}
-                                    max={45}
+                                    max={60}
                                     value={discount}
                                     onChange={(e) => setDiscount(Number(e.target.value))}
                                 />

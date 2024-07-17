@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/income-calculator/build/static/css/main.d5289b2f.css",
-    "main.js": "/income-calculator/build/static/js/main.255392e8.js",
+    "main.js": "/income-calculator/build/static/js/main.575c87fa.js",
     "index.html": "/income-calculator/build/index.html",
     "main.d5289b2f.css.map": "/income-calculator/build/static/css/main.d5289b2f.css.map",
-    "main.255392e8.js.map": "/income-calculator/build/static/js/main.255392e8.js.map"
+    "main.575c87fa.js.map": "/income-calculator/build/static/js/main.575c87fa.js.map"
   },
   "entrypoints": [
     "static/css/main.d5289b2f.css",
-    "static/js/main.255392e8.js"
+    "static/js/main.575c87fa.js"
   ]
 }
