@@ -13,9 +13,14 @@ function App() {
         return (price - (price * discount / 100)).toFixed(2);
     };
 
-    const calculateTotalPrice = () => {
+    const calculateTotalPriceMin = () => {
         const total = calculateDiscountedPrice();
-        return ((total - (total * 0.06 + total * 0.07)) * 0.2 * quantity).toFixed(2);
+        return ((total - (total * 0.06 + total * 0.4)) * 0.2 * quantity).toFixed(0);
+    };
+
+    const calculateTotalPriceMax = () => {
+        const total = calculateDiscountedPrice();
+        return ((total - (total * 0.06 + total * 0.07)) * 0.2 * quantity).toFixed(0);
     };
 
     return (
@@ -87,12 +92,12 @@ function App() {
                             <Form.Label column xs={12} md={5} lg={4} className="fw-bold">
                                 Мой доход:
                             </Form.Label>
-                            <Col xs={12} md={7} lg={8}>
+                            <Col xs={12} md={7} lg={8} >
                                 <Form.Control
                                     plaintext
                                     readOnly
-                                    value={`${calculateTotalPrice()} ₽`}
-                                    className="fs-3 text-primary fw-bold"
+                                    value={`${calculateTotalPriceMin()} — ${calculateTotalPriceMax()} ₽`}
+                                    className="fs-3 text-primary fw-bold me-2" // Добавляем отступ справа
                                 />
                             </Col>
                         </Form.Group>
